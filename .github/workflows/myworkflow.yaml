@@ -11,4 +11,7 @@ jobs:
       - name: mystep1
         run: | 
             whoami
-            cat /etc/os-release  
+            cat /etc/os-release
+            docker --version
+            docker compose version
+            systemctl status docker   
