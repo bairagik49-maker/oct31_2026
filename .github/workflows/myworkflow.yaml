@@ -5,4 +5,10 @@ on:
 
 jobs:
   myjobs1:
-    runs-on: ubuntu-latest  
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: mystep1
+        run: | 
+            whoami
+            cat /etc/os-release  
