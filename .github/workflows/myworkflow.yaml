@@ -16,8 +16,12 @@ jobs:
             docker compose version
             systemctl status docker
             ls -al
+      - name: mystep2- checkout the source code 
+        user: actions/checkout@v4
+      - name: mystep3- check if the source code is available in workspace or not 
+        run: ls -al
 
-    #  - name: mystep2- Build docker image
+    # - name: mystep2- Build docker image
     #   run: |
     #      docker image build -t karan6260k/myimage_oct31_26:t1 -f Dockerfile .
                 
