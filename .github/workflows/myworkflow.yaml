@@ -23,5 +23,7 @@ jobs:
 
       - name: mystep4- Build docker image
         run: |
-           docker image build -t karan6260k/myimage_oct31_26:t1 -f Dockerfile .
+           docker image build -t karan6260k/myimage_oct31_26:t${{ github.run_number }} -f Dockerfile .
+      - name: mystep5- check if the image is build success
+        run: docker images     
                 
