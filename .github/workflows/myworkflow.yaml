@@ -29,9 +29,9 @@ jobs:
       - name: mystep6- Docker login
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }} 
-      - name: push image to Docker Hub
+            username: ${{ secrets.DOCKERHUB_USERNAME }}
+            password: ${{ secrets.DOCKERHUB_TOKEN }} 
+      - name: Push image to Docker Hub
         run: |
            docker image push karan6260k/myimage_oct31_26:t${{ github.run_number }}  
                 
