@@ -14,4 +14,10 @@ jobs:
             cat /etc/os-release
             docker --version
             docker compose version
-            systemctl status docker   
+            systemctl status docker
+            ls -al
+
+    #  - name: mystep2- Build docker image
+    #   run: |
+    #      docker image build -t karan6260k/myimage_oct31_26:t1 -f Dockerfile .
+                
