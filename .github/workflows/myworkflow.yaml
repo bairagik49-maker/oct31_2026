@@ -17,7 +17,7 @@ jobs:
             systemctl status docker
             ls -al
       - name: mystep2- checkout the source code 
-        user: actions/checkout@v4
+        uses: actions/checkout@v4
       - name: mystep3- check if the source code is available in workspace or not 
         run: ls -al
 
