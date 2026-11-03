@@ -2,6 +2,7 @@ name: myworkflow_oct31
 
 on:
   push:
+    workflow_dispatch:
 
 jobs:
   myjobs1:
