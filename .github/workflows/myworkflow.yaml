@@ -2,7 +2,7 @@ name: myworkflow_oct31
 
 on:
   push:
-  workflow_dispatch:
+  #  workflow_dispatch:
 jobs:
   myjobs1:
     runs-on: ubuntu-latest
