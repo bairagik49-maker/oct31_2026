@@ -2,7 +2,9 @@ name: myworkflow_oct31
 
 on:
   push:
-  #  workflow_dispatch:
+    branches:
+    - karanbranch
+  workflow_dispatch:
 jobs:
   myjobs1:
     runs-on: ubuntu-latest
